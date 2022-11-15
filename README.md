@@ -6,6 +6,6 @@ There is an issue sending a message to a queue inside a transaction when jms-poo
 
 To reproduce it, there are two test classes:
 
-- ApplicationTest: This test send a message to a queue inside a transaction without pooling enabled. It works fine.
+- ApplicationTest: The test send a message to a queue inside a transaction without pooling enabled. It works fine.
 - ApplicationPoolingTest: This same test, but enabling jms pooling. The test fail with a `SynchedLocalTransactionFailedException`
 
