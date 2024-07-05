@@ -29,7 +29,7 @@
   <dependencies>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-activemq</artifactId>
+      <artifactId>spring-boot-starter-artemis</artifactId>
     </dependency>
     <dependency>
       <groupId>dev.snowdrop</groupId>
@@ -41,8 +41,17 @@
       <artifactId>spring-boot-starter-test</artifactId>
       <scope>test</scope>
     </dependency>
+    
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>artemis-junit-5</artifactId>
+      <version>${artemis.version}</version>
+      <scope>test</scope>
+    </dependency>
+    
+    
   </dependencies>
-
+      
   <build>
     <plugins>
       <plugin>
@@ -51,5 +60,5 @@
       </plugin>
     </plugins>
   </build>
-
+      
 </project>
