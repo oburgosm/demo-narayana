@@ -24,8 +24,28 @@ public class DemoNarayanaConfiguration {
   public JmsTemplate jmsTemplate(ConnectionFactory cf) {
     JmsTemplate jmsTemplate = new JmsTemplate();
     jmsTemplate.setConnectionFactory(cf);
-    jmsTemplate.setSessionTransacted(true);
+    jmsTemplate.setSessionTransacted(false);
     jmsTemplate.setDefaultDestinationName("testQueue");
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     return jmsTemplate;
   }
 
